@@ -11,11 +11,9 @@ export function getStrategy(key: string, config: any): Strategy<any> {
     }
 }
 
-export const strategies = Object.entries(get("strategies", {})).map((entry) => {
+export const strategies = Object.entries(get("strategies", SETTINGS["strategies"])).map((entry) => {
     const type: string = entry[0];
     const options: any  = entry[1];
 
-    const config = Object.assign({}, SETTINGS["strategies"][type] || {}, options);
-
-    return getStrategy(type, config);
+    return getStrategy(type, options);
 });
