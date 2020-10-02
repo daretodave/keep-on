@@ -1,0 +1,21 @@
+{
+  "strategies": {
+    "mouseNudgeStrategy": {
+      "mouseMoveX": 10,
+      "mouseMoveY": 10,
+      "mouseMoveXRandomOffset": 20,
+      "mouseMoveYRandomOffset": 20,
+      "mouseSpeed": 3
+    }
+  },
+  "runtime": {
+    "type": "idleInterval",
+    "idleTimeout": 10000,
+    "idleEventInternal": 3000,
+    "idleEventIntervalRandomOffset": 250
+  },
+  "shortcuts": {
+    "pause": ["CTRL", "~"],
+    "stop": ["CTRL", "ESC"]
+  }
+}
